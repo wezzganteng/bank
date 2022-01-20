@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+ <title></title>
+ <style>
+  .tengah{
+            background-image:url(  keren-hd-texture-wallpapers-wood-background-kayu-keren-hd-wallpapers-for-free-download-doodle-background-kayu-keren-hd-wallpapers-wallpaper.jpg);
+            background-position:center;
+            width:auto;
+            height:auto;
+         
+        }
+  
+
+  table{
+   background: coral;
+   margin:auto;
+
+  }
+
+  
+ </style>
+</head>
+<body class="tengah">
+ <div>
+  
+  <table border="1">
+   <h2 align="center" style="background: rgb(199, 192, 190)"></h2>
+  
+   <tr>    
+    <th>setor tunai</th>
+    <th><input type="number"  id="harga" onchange="total()"></th>
+   </tr>
+
+   
+  
+   <tr>    
+    <th>tarik tunai</th>    
+    <th><input type="number" id="bayar" onchange="total()"></th>
+   </tr>
+  
+   <tr>   
+    <table width="300" height="201px" border="8">
+    <th><label align="landscape"  id="cetak" ></label></th>
+    </table>
+   </tr>         
+   
+  </table>
+    
+  
+  
+  <script type="text/javascript">
+  
+  function total() {
+
+   var harga =  parseInt(document.getElementById('harga').value);
+   var saldo =  parseInt(50000) + parseInt(harga);
+   var hasil = saldo - pembayaran;
+
+   var pembayaran =  parseInt(document.getElementById('bayar').value);
+
+
+   var kembali =saldo - pembayaran;
+ 
+  
+   var cetak = 
+                      "setor tunai  : "+harga+"</br>"+
+                      "saldo anda  : "+saldo+"</br>"+
+                   
+            
+              
+                      "tarik tunai : "+pembayaran+"</br>"+
+                      "saldo setelah tarik tunai  : "+kembali;
+    document.getElementById("cetak").innerHTML=cetak;
+  }
+  
+  </script>
+ </div>
+</body>
+</html>
